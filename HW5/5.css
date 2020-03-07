@@ -1,0 +1,13 @@
+table {
+    border-collapse: collapse;
+}
+
+td, tr {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+}
+
+td[data-y=0] {
+    border: none;
+}

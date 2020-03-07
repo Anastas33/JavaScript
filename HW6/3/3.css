@@ -1,0 +1,20 @@
+.product-box {
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  display: block;
+  width: 261px;
+  height: 30px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.id {
+  display: none;
+}
+
+.cart {
+  margin-top: 50px;
+}
