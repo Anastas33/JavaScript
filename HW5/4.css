@@ -5,3 +5,7 @@ button {
 .product {
     margin-bottom: 30px;
 }
+
+.desc {
+    width: 150px;
+}
