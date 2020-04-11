@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict';
+
+        function askForSum() {
+            return prompt('Введите сумму, которую хотите положить в банк');
+        }
+        let sum = askForSum();
+        while (sum === '') {
+            alert('Вы не ввели сумму');
+            sum = askForSum();
+        }
+        if (sum === null) {
+            alert('Вы нажали отмена');  
+        } else {
+            let sumLength = sum.length;
+            let lastPosNum = sum.charAt(sumLength-1);
+            let preLastPosNum = sum.charAt(sumLength-2);
+            if (lastPosNum == '1' && preLastPosNum == '1') {
+                alert(`Ваша сумма в ${sum} рублей успешно зачислена.`);
+            } else {
+                switch (lastPosNum) {
+                    case '1':
+                        alert(`Ваша сумма в ${sum} рубль успешно зачислена.`);
+                        break;
+                    case '2':
+                    case '3':
+                    case '4':
+                        alert(`Ваша сумма в ${sum} рубля успешно зачислена.`);
+                        break;
+                    default:
+                        alert(`Ваша сумма в ${sum} рублей успешно зачислена.`);
+                        break;
+                };
+            };
+        }
+    </script>
+</body>
+</html>
