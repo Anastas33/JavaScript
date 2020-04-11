@@ -1,0 +1,21 @@
+#word {
+    display: flex;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.letter {
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin-right: 5px;
+}
+
+.hidden {
+    background-color: black;
+}
